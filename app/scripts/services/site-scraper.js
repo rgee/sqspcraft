@@ -2,15 +2,14 @@
 
 angular.module('hackdayVizApp')
   .factory('siteScraper', function () {
-    // Service logic
-    // ...
-
-    var meaningOfLife = 42;
-
     // Public API here
     return {
-      someMethod: function () {
-        return meaningOfLife;
+      getSiteData: function(identifier, callback, ctx) {
+        window.setTimeout(function() {
+          callback.call(ctx, {
+            pages: []
+          });
+        }, 1000);
       }
     };
   });

@@ -29,15 +29,16 @@ var rendering = false;
 angular.module('hackdayVizApp')
   .directive('sqspcraftWorld', function () {
     return {
-      template: '<div><p>SQSP world for: {{site}}</p></div>',
+      template: '<div><p>SQSP world for: {{siteName}}</p></div>',
       restrict: 'E',
       scope: {
-        site: '@site'
+        data: '@',
+        siteName: '@site'
       },
       link: function postLink(scope, element, attrs) {
         element.find('div').append(renderer.domElement);
-        scope.$watch('site', function() {
-          if (scope.site && !rendering) {
+        scope.$watch('data', function() {
+          if (scope.data && !rendering) {
             rendering = true;
             (function renderLoop(){
               requestAnimationFrame(renderLoop);
