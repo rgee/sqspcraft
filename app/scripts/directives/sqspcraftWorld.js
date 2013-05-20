@@ -5,8 +5,13 @@ angular.module('hackdayVizApp')
     return {
       template: '<div></div>',
       restrict: 'E',
+      scope: {
+        site: '@site'
+      },
       link: function postLink(scope, element, attrs) {
-        element.text('this is the sqspcraftWorld directive');
+        scope.$watch('site', function() {
+          element.text('SQSP world for: ' + scope.site);
+        });
       }
     };
   });
