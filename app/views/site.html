@@ -1,2 +1,5 @@
-<input ng-model="siteName" type="text" class="span4" placeholder="Enter your site identifier to continue">
-<p>{{siteName}}</p>
+<form ng-submit="showSite()" class"form-search">
+  <input ng-model="siteNameInput" type="text" class="span4 search-query" placeholder="Enter your site identifier to continue"/>
+  <button class="btn btn-primary" type="submit" id="submit">Explore</button>
+</form>
+<sqspcraftWorld></sqspcraftWorld>
