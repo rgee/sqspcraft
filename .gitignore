@@ -2,8 +2,4 @@ node_modules
 dist
 .tmp
 .sass-cache
-.jshintrc
-.bowerrc
-.editorconfig
-.gitattributes
-app/components
+app/bower_components
