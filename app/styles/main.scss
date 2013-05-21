@@ -3,6 +3,14 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
-.container {
-  width: 100%;
+.logo {
+  margin: 0 auto;
+
+  .logo-text {
+    display: inline-block;
+  }
+  
+  .get-started {
+    margin: 0 0 17px 10px;
+  }
 }

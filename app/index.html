@@ -16,8 +16,26 @@
         <!-- endbuild -->
     </head>
     <body>
-        <div class="container">
-
+        <div class="container-fluid">
+            <div class="row logo">
+                <h1 class="logo-text">Squarespacecraft</h1>
+                <button class="btn btn-primary get-started" data-toggle="modal" data-target="#launcher">Get Started</button>
+            </div>
+            <div class="row">
+                <div class="world-container">
+                </div>
+            </div>
+            <div id="launcher" class="modal hide fade" aria-hidden="true" aria-labelledby="launcher-label" role="dialog">
+                <div class="modal-header">
+                    <h3 id="launcher-label">Get started</h3>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Enter your Squarespace identifier"></input>
+                </div>
+                <div class="modal-footer"> 
+                    <button data-dismiss="modal" class="btn btn-primary">Explore</button>
+                </div>
+            </div>
         </div>
 
         <!--[if lt IE 7]>
